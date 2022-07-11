@@ -14,14 +14,13 @@
 </head>
 
 <body>
-
   <header>
+    <!-- Menu Hamburguesa oculta segun @media -->
+    <input type="checkbox" id="chkMenu" />
+    <label class="labelMenu" for="chkMenu"><img src="./assets/icons/menu.png" alt="Menu" /></label>
+
     <h1><a href="./index.html" alt="Pagina principal" class="content__title">NATIVIDAD AROMAS</a></h1>
-    <span class="spanLogo">
-      <a href="./index.html" alt="Pagina principal"><img src="./assets/icons/logo-natividad.png" alt="Natividad Aromas"
-          width="70px" height="70px" /></a>
-    </span>
-    <nav>
+    <nav class="navMenu">
       <ul class="contenedorNavBar">
         <li><a href="./index.html" alt="Pagina principal">Home</a></li>
         <li><a href="./pages/velas.html" alt="Velas">Velas</a></li>
@@ -29,15 +28,17 @@
         <li><a href="./pages/productos.html" alt="Productos">Productos</a></li>
         <li><a href="./pages/contacto.html" alt="Contacto">Contacto</a></li>
       </ul>
-      <!-- Menu Hamburguesa oculta segun @media -->
-      <!-- <span class="spanMenu"><img src="./assets/icons/menu.png" alt="Menu" /></span> -->
-      <!-- colocar menu y replicarlo a las otras paginas-->
     </nav>
+
+    <span class="spanLogo">
+      <a href="./index.html" alt="Pagina principal"><img src="./assets/icons/logo-natividad.png" alt="Natividad Aromas"
+          width="70px" height="70px" /></a>
+    </span>
   </header>
   <main>
 
     <section class="sectionIndex">
-      <div class="sectionIndex__grid contenedor">
+      <div class="sectionIndex__grid">
         <div class="sectionIndex__grid-content">
           <h2>A quién no le gusta entrar a su casa y notar un aroma reconfortante que nos haga
             sentir cómodo que
@@ -45,11 +46,15 @@
           <p>El olfato es uno de los sentidos con mayor capacidad evocadora.
             <br /> Y es que el aroma de tu casa tiene casi la misma importancia que cualquier otro elemento
             decorativo de tu hogar, <br /> debemos crear entonces, un diseño integral y armonioso a través de
-            una experiencia multisensorial.  </p>
-            <a href="./pages/productos.html">Te invitamos a conocernos.</a>
-        
+            una experiencia multisensorial.
+          </p>
+          <a href="./pages/productos.html">Te invitamos a conocernos.</a>
+
         </div>
-        <video class="sectionIndex__grid-video" src="../assets/media/ArmaTuBox.mp4" width="320" height="320" autoplay muted loop> </video>
+        <div>
+          <video class="sectionIndex__grid-video" src="../assets/media/ArmaTuBox.mp4" width="320" height="320" autoplay
+            muted loop> </video>
+        </div>
       </div>
     </section>
 

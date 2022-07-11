@@ -15,13 +15,12 @@
 
 <body>
 
-  <header>
+  <header><!-- Menu Hamburguesa oculta segun @media -->
+    <input type="checkbox" id="chkMenu" />
+    <label class="labelMenu" for="chkMenu"><img src="../assets/icons/menu.png" alt="Menu" /></label>
+   
     <h1><a href="../index.html" alt="Pagina principal" class="content__title">NATIVIDAD AROMAS</a></h1>
-    <span class="spanLogo">
-      <a href="../index.html" alt="Pagina principal"><img src="../assets/icons/logo-natividad.png"
-          alt="Natividad Aromas" width="70px" height="70px" /></a>
-    </span>
-    <nav>
+       <nav class="navMenu">
       <ul class="contenedorNavBar">
         <li><a href="../index.html" alt="Pagina principal">Home</a></li>
         <li><a href="./velas.html" alt="Velas">Velas</a></li>
@@ -29,9 +28,11 @@
         <li><a href="./productos.html" alt="Productos">Productos</a></li>
         <li><a href="./contacto.html" alt="Contacto">Contacto</a></li>
       </ul>
-      <!-- Menu Hamburguesa oculta segun @media -->
-      <!-- <span class="spanMenu"><img src="../assets/icons/menu.png" alt="Menu" /></span> -->
     </nav>
+    <span class="spanLogo">
+      <a href="../index.html" alt="Pagina principal"><img src="../assets/icons/logo-natividad.png"
+          alt="Natividad Aromas" width="70px" height="70px" /></a>
+    </span>
   </header>
   <main>
     <h2>Animate a decorar y perfumar tu lugar con Natividad Aromas</h2>
